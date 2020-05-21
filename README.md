@@ -29,7 +29,7 @@ Things you may want to cover:
 |------|----|-------|
 |user_id|integer|null: false, foreign_key: true|
 |group_id|integer|null: false, foreign_key: true|
-|text|text|null: false|
+|text|text||
 |image|string||
 
 ### Association
@@ -40,8 +40,8 @@ Things you may want to cover:
 ## usersテーブル
 |Column|Type|Options|
 |------|----|-------|
-|name--|string|null: false, add_index: true|
-|email-|string|null: false, unique: true|
+|name|string|null: false, add_index: true|
+|email|string|null: false, unique: true|
 
 ## Association
 has_many :groups_users
