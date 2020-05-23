@@ -1,0 +1,33 @@
+.chat-side
+  .side-header
+    .side-header__box
+      %p.side-header__box__user-name
+        092ta28
+      %ul.side-header__box__menu
+        %li.side-header__box__menu__new-group
+          = link_to "#" do
+            = icon('fas','edit')
+        %li.side-header__box__menu__edit-user
+          = link_to "#" do
+            = icon('fas','cog')
+
+  .groups
+    = link_to "#", class:"group" do
+    
+      %p.group__group-name
+      チームD
+      %p.group__latest-message
+      頑張って！
+
+      .group
+      %p.group__group-name
+      三井ゼミ
+      %p.group__latest-message
+      お疲れ様です。
+      
+      .group
+      %p.group__group-name
+      TECHCAMP
+      %p.group__latest-message
+      これから始めましょう。
+

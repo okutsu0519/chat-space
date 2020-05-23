@@ -1,0 +1,29 @@
+.chat-main
+
+  .main-header
+    .main-header__left-box
+      %h2.main-header__left-box__current-group
+        TECHCAMP
+      %ul.main-header__left-box__member-list
+        Member：
+        %li.main-header__left-box__member-list__member 092ta28
+        %li.main-header__left-box__member-list__member chikahisa
+    
+    .main-header__edit-btn
+      .main-header__edit-btn__font Edit
+
+  .messages
+    .message
+      .message__upper-info
+        %p.message__upper-info__talker 092ta28
+        %p.message__upper-info__date 2020/05/22(Fri) 17:37:50
+      .message__text これから始めましょう。
+      
+  .form
+    .form__new_message
+      .form__new_message__inputbox
+        %input.form__new_message__inputbox__text{:name => "message[content]", :placeholder => "  type a message", :type => "text"}
+        %label{class: "form__new_message__inputbox__image"}
+          = icon('fas', 'image')
+      .form__new_message__submit-btn
+        Send
