@@ -25,5 +25,6 @@
         %input.form__new_message__inputbox__text{:name => "message[content]", :placeholder => "  type a message", :type => "text"}
         %label{class: "form__new_message__inputbox__image"}
           = icon('fas', 'image')
+        %input{type: "file",class: "form__new_message__inputbox__image__file"}
       .form__new_message__submit-btn
         Send
