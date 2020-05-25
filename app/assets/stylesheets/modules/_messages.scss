@@ -45,15 +45,19 @@
     background-color: #2f3e51;
     height: calc(100vh - 100px);
     padding-left: 20px;
+
     .group {
       height: 65px;
       padding: 20px 20px 40px;
-      color: #ffffff;
-      text-decoration: none;
-      &__group-name {
+      a {
+        text-decoration: none;
+        color: #ffffff;
+      }
+      
+      &__name {
         font-size: 15px;
       }
-      &__latest-message {
+      &__message {
         font-size: 11px;
       }
     }
