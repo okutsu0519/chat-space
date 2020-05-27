@@ -10,8 +10,8 @@
             = user.name
     
     .main-header__edit-btn
-      = link_to edit_group_path(@group) do
-        .main-header__edit-btn__font
+      = link_to edit_group_path(@group), class: "main-header__edit-btn__font"  do
+        .main-header__edit-btn__font__edit
           Edit
 
   .messages
