@@ -109,13 +109,14 @@
 
 
   .messages {
+    overflow: scroll;
     height: calc(100vh - 190px);
     background-color: #fafafa;
     .message {
-      &__upper-info {
+      &__upper-message {
         padding: 35px 0 12px 40px;
         display: flex;
-        &__talker {
+        &__user-name {
           font-size: 16px;
           color: #333333;
           margin-right: 10px;
@@ -125,13 +126,15 @@
           color: #999999;
         }
       }
-      &__text {
+      &__lower-message {
+        &__content{
         font-size: 14px;
         color: #434a54;
         margin: 0 0 46px 40px;
       }
     }
   }
+ }
 
 
   .form {
