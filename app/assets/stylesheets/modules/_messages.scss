@@ -101,7 +101,7 @@
       border: 1px solid #38aef0;
       height: 40px;
       width: 72px;
-      margin: 28px 40px 28px;
+      margin: 28px 0px 28px 0px;
 
       &__font {
         font-size: 16px;
@@ -119,8 +119,9 @@
     height: calc(100vh - 190px);
     background-color: #fafafa;
     .message {
+      margin: 35px 0px 46px 40px;
       &__upper-message {
-        padding: 35px 0 12px 40px;
+        margin-bottom: 12px;
         display: flex;
         &__user-name {
           font-size: 16px;
@@ -137,7 +138,6 @@
         &__content{
         font-size: 14px;
         color: #434a54;
-        margin: 0 0 46px 40px;
       }
     }
   }
@@ -164,11 +164,13 @@
         &__text {
           height: 50px;
           width: 100%;
+          padding-left: 10px;
           }
         &__image {
           position: absolute;
           top: 10px;
           right: 10px;
+          font-size: 1.3rem;
           &__file {
             display: none;
           }
@@ -179,6 +181,7 @@
         width: 100px;
         height: 50px;
         margin-left: 15px;
+        padding: 0 30px;
         background-color: #38aef0;
         color: white;
         cursor: pointer;
